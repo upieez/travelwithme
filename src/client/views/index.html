@@ -7,7 +7,31 @@
     <title>Travel With Me</title>
   </head>
   <body>
-    <h1>Hello World</h1>
-    <h2>This works!</h2>
+    <header class="hero">
+      <h1>Travel With Me</h1>
+      <form class="search-form" onsubmit="return Client.handleSubmit(event)">
+        <label for="country">Enter your country</label>
+        <br />
+        <input
+          type="text"
+          id="country-search"
+          name="country"
+          value="Singapore"
+        />
+        <input type="submit" class="search-btn" value="Search" />
+      </form>
+    </header>
+    <main>
+      <section class="search-result">
+        <h2>Your searched trip</h2>
+      </section>
+      <section class="upcoming-trip">
+        <h2>Your upcoming trip</h2>
+      </section>
+      <section class="saved-trip">
+        <h2>Your saved trips</h2>
+      </section>
+    </main>
+    <footer>By TravelWithMe</footer>
   </body>
 </html>
