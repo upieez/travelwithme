@@ -35,3 +35,9 @@
 - [Weatherbit.io](https://www.weatherbit.io/api) - Getting updated weather of the location
 - [Pixabay](https://pixabay.com/service/about/api/) - Getting relevant picture of the country
 - [REST Countris](https://restcountries.eu/) - Displaying relevant information about the country
+
+## Improvements
+
+- [ ] Storing it in localstate
+- [ ] Fetching the latest weather update for the trip
+- [ ] Loading functionality
