@@ -6,7 +6,8 @@
   "author": "Samuel Huang <samuelhww@gmail.com> (https://github.com/upieez/)",
   "private": true,
   "scripts": {
-    "start": "node src/server/index.js",
+    "dev": "NODE_ENV=development node src/server/index.js",
+    "start": "NODE_ENV=production node src/server/index.js",
     "test": "jest",
     "build:prod": "webpack --config webpack.prod.js",
     "build:dev": "webpack serve  --config webpack.dev.js --open"
@@ -26,6 +27,7 @@
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "node-fetch": "^2.6.1",
     "webpack": "^5.28.0",
     "webpack-cli": "^4.5.0"
   },
@@ -47,6 +49,7 @@
     "sass-loader": "^11.0.1",
     "style-loader": "^2.0.0",
     "terser-webpack-plugin": "^5.1.1",
+    "webpack-dev-middleware": "^3.7.3",
     "webpack-dev-server": "^3.11.2",
     "workbox-webpack-plugin": "^6.1.2",
     "write-file-webpack-plugin": "^4.5.1"
