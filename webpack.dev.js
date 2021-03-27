@@ -3,7 +3,7 @@ const webpack = require("webpack");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const WriteFilePlugin = require("write-file-webpack-plugin"); // figure out how to use this
-const Dotenv = require("dotenv-webpack");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: "./src/client/index.js",
@@ -11,6 +11,8 @@ module.exports = {
     libraryTarget: "var",
     library: "Client",
     path: path.resolve(__dirname, "dist"),
+    clean: true,
+    publicPath: "/",
   },
   mode: "development",
   devServer: {
@@ -18,7 +20,7 @@ module.exports = {
     compress: true,
     injectClient: false,
   },
-  devtool: "source-map",
+  devtool: "inline-source-map",
   stats: "verbose",
   module: {
     rules: [
@@ -29,7 +31,7 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        use: ["style-loader", "css-loader", "sass-loader"],
+        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
     ],
   },
@@ -38,7 +40,6 @@ module.exports = {
       template: "./src/client/views/index.html",
       filename: "./index.html",
     }),
-    new Dotenv(),
     new CleanWebpackPlugin({
       // Simulate the removal of files
       dry: true,
@@ -48,5 +49,6 @@ module.exports = {
       cleanStaleWebpackAssets: true,
       protectWebpackAssets: false,
     }),
+    new MiniCssExtractPlugin({ filename: "[name].css" }),
   ],
 };
