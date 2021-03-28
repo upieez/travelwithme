@@ -33,8 +33,8 @@
 
 - [GeoNames](https://www.geonames.org/) - For getting the coordinates of a location
 - [Weatherbit.io](https://www.weatherbit.io/api) - Getting updated weather of the location
-- [Pixabay](https://pixabay.com/service/about/api/) - Getting relevant picture of the country
-- [REST Countris](https://restcountries.eu/) - Displaying additional information about the country
+- [Pixabay](https://pixabay.com/service/about/api/) - Getting relevant picture of the location
+- [REST Countris](https://restcountries.eu/) - Displaying additional information about the location
 
 ## Improvements / Additional Features
 
@@ -53,3 +53,12 @@
 - [ ] Allow the user to add additional trips (this may take some heavy reworking, but is worth the challenge).
 - [ ] Automatically sort additional trips by countdown.
 - [ ] Move expired trips to bottom/have their style change so it’s clear it’s expired.
+
+## Useful resources
+
+### Styles
+
+- [Structuring SASS (7-1 pattern)](https://itnext.io/structuring-your-sass-projects-c8d41fa55ed4)
+- [Everything You Should Know About Hero Image in Web Design](https://gapsystudio.com/blog/hero-image-website-design/)
+- [Responsive CSS Grid Hero Image](https://dev.to/billraymond/creating-a-pure-responsive-css-grid-hero-image-or-banner-image-2pej)
+- [SASS Boilerplate](https://github.com/KittyGiraudel/sass-boilerplate)
