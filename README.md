@@ -34,10 +34,22 @@
 - [GeoNames](https://www.geonames.org/) - For getting the coordinates of a location
 - [Weatherbit.io](https://www.weatherbit.io/api) - Getting updated weather of the location
 - [Pixabay](https://pixabay.com/service/about/api/) - Getting relevant picture of the country
-- [REST Countris](https://restcountries.eu/) - Displaying relevant information about the country
+- [REST Countris](https://restcountries.eu/) - Displaying additional information about the country
 
-## Improvements
+## Improvements / Additional Features
 
-- [ ] Storing it in localstate
-- [ ] Fetching the latest weather update for the trip
-- [ ] Loading functionality
+- [ ] Add end date and display length of trip.
+- [ ] Pull in an image for the country from Pixabay API when the entered location brings up no results (good for obscure localities).
+- [ ] Allow user to add multiple destinations on the same trip.
+- [ ] Lazy load when pulling in data
+- [ ] Allow the user to add hotel and/or flight data.
+- [x] Integrate the REST Countries API to pull in data for the country being visited.
+- [ ] Allow the user to remove the trip.
+- [ ] Use Local Storage to save the data so that when they close, then revisit the page, their information is still there.
+- [ ] Instead of just pulling a single day forecast, pull the forecast for multiple days.
+- [x] Incorporate icons into forecast.
+- [ ] Allow user to Print their trip and/or export to PDF.
+- [ ] Allow the user to add a todo list and/or packing list for their trip.
+- [ ] Allow the user to add additional trips (this may take some heavy reworking, but is worth the challenge).
+- [ ] Automatically sort additional trips by countdown.
+- [ ] Move expired trips to bottom/have their style change so it’s clear it’s expired.
