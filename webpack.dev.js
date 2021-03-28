@@ -4,6 +4,7 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const WriteFilePlugin = require("write-file-webpack-plugin"); // figure out how to use this
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: "./src/client/index.js",
@@ -13,6 +14,7 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     clean: true,
     publicPath: "/",
+    assetModuleFilename: "images/[hash][ext][query]",
   },
   mode: "development",
   devServer: {
@@ -50,5 +52,8 @@ module.exports = {
       protectWebpackAssets: false,
     }),
     new MiniCssExtractPlugin({ filename: "[name].css" }),
+    new CopyPlugin({
+      patterns: [{ from: "src/client/assets/icons", to: "icons" }],
+    }),
   ],
 };
