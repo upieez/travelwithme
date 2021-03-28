@@ -10,14 +10,16 @@
     <header class="hero">
       <h1>Travel With Me</h1>
       <form class="search-form" onsubmit="return Client.handleSubmit(event)">
-        <label for="country">Enter your country</label>
+        <label for="country">Where are you going?</label>
         <br />
         <input
           type="text"
           id="country-search"
           name="country"
           value="Singapore"
+          required
         />
+        <input type="date" id="departure" name="departure" required />
         <input type="submit" class="search-btn" value="Search" />
       </form>
     </header>
