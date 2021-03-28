@@ -1,0 +1,18 @@
+.card-container {
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.card-image {
+  max-width: 100%;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  .weather {
+    display: flex;
+  }
+}

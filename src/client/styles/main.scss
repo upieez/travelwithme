@@ -1,0 +1,19 @@
+// 1. Configuration and helpers
+@import "abstracts/variables";
+
+// 2. Vendors
+@import "vendors/google-fonts", "vendors/font-awesome";
+
+// 3. Base stuff
+@import "base/typography";
+
+// 4. Layout-related sections
+@import "layout/header", "layout/footer", "layout/search";
+
+// 5. Components
+@import "components/button", "components/country", "components/date",
+  "components/main-card";
+
+// 6. Page-specific styles
+
+// 7. Themes
