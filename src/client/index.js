@@ -1,6 +1,7 @@
 import "./js/app";
 import { handleSubmit } from "./js/formHandler";
+import { renderCard } from "./js/renderCard";
 
-import "./styles/styles.scss";
+import "./styles/main.scss";
 
-export { handleSubmit };
+export { handleSubmit, renderCard };
