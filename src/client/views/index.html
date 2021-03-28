@@ -10,17 +10,26 @@
     <header class="hero">
       <h1>Travel With Me</h1>
       <form class="search-form" onsubmit="return Client.handleSubmit(event)">
-        <label for="country">Where are you going?</label>
-        <br />
-        <input
-          type="text"
-          id="country-search"
-          name="country"
-          value="Singapore"
-          required
-        />
-        <input type="date" id="departure" name="departure" required />
-        <input type="submit" class="search-btn" value="Search" />
+        <div class="country-container">
+          <label for="country">Where are you going?</label>
+          <br />
+          <input
+            type="text"
+            id="country-search"
+            name="country"
+            placeholder="Enter a country"
+            required
+          />
+          <span class="error-message"></span>
+        </div>
+        <div class="date-container">
+          <label for="country">Departure Date</label>
+          <br />
+          <input type="date" id="departure" name="departure" required />
+        </div>
+        <div class="button-container">
+          <button type="submit" class="search-btn" value="Search" />Let's Go!  <i class="fa fa-search" aria-hidden="true"></i></button>
+        </div>
       </form>
     </header>
     <main>
@@ -34,6 +43,8 @@
         <h2>Your saved trips</h2>
       </section>
     </main>
-    <footer>By TravelWithMe</footer>
+    <footer class="site-footer">
+      Travel With Me
+    </footer>
   </body>
 </html>
