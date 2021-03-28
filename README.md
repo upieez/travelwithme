@@ -62,3 +62,7 @@
 - [Everything You Should Know About Hero Image in Web Design](https://gapsystudio.com/blog/hero-image-website-design/)
 - [Responsive CSS Grid Hero Image](https://dev.to/billraymond/creating-a-pure-responsive-css-grid-hero-image-or-banner-image-2pej)
 - [SASS Boilerplate](https://github.com/KittyGiraudel/sass-boilerplate)
+
+### Testing
+
+- [Express.js with Jest and Supertest](https://www.albertgao.xyz/2017/05/24/how-to-test-expressjs-with-jest-and-supertest/)
