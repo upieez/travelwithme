@@ -1,5 +1,5 @@
 const request = require("supertest");
-const app = require("../../src/server/index");
+const app = require("../../src/server/app");
 
 describe("Retrieve Endpoints", () => {
   it("should return 200 if successful for /save-trip", async () => {
