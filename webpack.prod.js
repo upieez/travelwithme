@@ -6,8 +6,7 @@ const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 // const WorkboxPlugin = require("workbox-webpack-plugin"); // Not in use at the moment
 const HtmlMinimizerPlugin = require("html-minimizer-webpack-plugin");
-const CopyPlugin = require("copy-webpack-plugin"); // figure out how to use this maybe
-const Dotenv = require("dotenv-webpack");
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: "./src/client/index.js",
@@ -42,6 +41,8 @@ module.exports = {
       filename: "./index.html",
     }),
     new MiniCssExtractPlugin({ filename: "[name].css" }),
-    new Dotenv(),
+    new CopyPlugin({
+      patterns: [{ from: "src/client/assets/icons", to: "icons" }],
+    }),
   ],
 };
