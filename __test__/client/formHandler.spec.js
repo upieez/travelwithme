@@ -1,7 +1,7 @@
-import { formHandler } from "../../src/client/js/formHandler";
+import { handleSubmit } from "../../src/client/js/formHandler";
 
 describe("formHandler function", () => {
-  test("should not be a defined function", () => {
-    expect(formHandler).toBeUndefined();
+  test("should be a defined function", async () => {
+    expect(handleSubmit).toBeDefined();
   });
 });

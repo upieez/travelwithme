@@ -8,4 +8,8 @@ describe("Retrieve Endpoints", () => {
     });
     expect(response.statusCode).toBe(200);
   });
+  it("should return 404 for everything else", async () => {
+    const response = await request(app).get("/foo/bar");
+    expect(response.statusCode).toBe(404);
+  });
 });
